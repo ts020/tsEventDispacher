@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+<button id="btn">ボタン</button>
+<script type="text/javascript" src="js/EventDispatcher.js"></script>
+<script type="text/javascript" src="js/Main.js"></script>
+<script type="text/javascript">
+  var btnSample = new sample.BtnSample(document.getElementById("btn"));
+  btnSample.addEventListener("clicked", function(){
+    alert(btnSample.getText());
+  });
+</script>
+</body>
+</html>
